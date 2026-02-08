@@ -1,0 +1,54 @@
+{
+  "test_cases": [
+    {
+      "id": "test_001",
+      "jd_text": "Senior ML Engineer\n\nRequired:\n- Master's in CS/AI\n- 5+ years ML experience\n- Python, TensorFlow, PyTorch\n- Production ML deployment\n- Cloud (AWS/GCP/Azure)\n\nPreferred:\n- PhD in ML\n- Publications\n- Team leadership",
+      "resume_text": "JOHN DOE - Senior ML Engineer\n\nEDUCATION\nMS Computer Science - Stanford 2018\nBS Computer Engineering - UC Berkeley 2016\n\nEXPERIENCE\nSenior ML Engineer | Tech Corp | 2021-Present\n- Built recommendation system (10M users)\n- Deployed models on AWS SageMaker\n- Python, TensorFlow, PyTorch\n- Led team of 4 engineers\n\nML Engineer | DataTech | 2019-2021\n- NLP models (92% accuracy)\n- Computer vision systems\n\nPUBLICATIONS\n- NeurIPS 2022\n- ICML 2021",
+      "ground_truth": {
+        "label": "ACCEPT",
+        "fit_score": 92,
+        "requirements": [
+          {"requirement": "Master's in CS/AI", "match": "yes", "score": 5},
+          {"requirement": "5+ years ML experience", "match": "yes", "score": 5},
+          {"requirement": "Python, TensorFlow, PyTorch", "match": "yes", "score": 5},
+          {"requirement": "Production ML deployment", "match": "yes", "score": 5},
+          {"requirement": "Cloud (AWS/GCP/Azure)", "match": "yes", "score": 5},
+          {"requirement": "PhD in ML", "match": "no", "score": 0},
+          {"requirement": "Publications", "match": "yes", "score": 5},
+          {"requirement": "Team leadership", "match": "yes", "score": 5}
+        ]
+      }
+    },
+    {
+      "id": "test_002",
+      "jd_text": "Senior ML Engineer\n\nRequired:\n- Master's in CS/AI\n- 5+ years ML experience\n- Python, TensorFlow, PyTorch\n- Production ML deployment\n- Cloud (AWS/GCP/Azure)",
+      "resume_text": "JANE SMITH - Junior Data Analyst\n\nEDUCATION\nBS Business Administration - State University 2020\n\nEXPERIENCE\nData Analyst | Marketing Co | 2020-Present\n- Excel data analysis\n- Created dashboards in Tableau\n- SQL queries\n\nINTERNSHIP\nData Science Intern | Tech Startup | Summer 2019\n- Python scripts for data cleaning\n- Basic ML with scikit-learn",
+      "ground_truth": {
+        "label": "REJECT",
+        "fit_score": 25,
+        "requirements": [
+          {"requirement": "Master's in CS/AI", "match": "no", "score": 0},
+          {"requirement": "5+ years ML experience", "match": "no", "score": 0},
+          {"requirement": "Python, TensorFlow, PyTorch", "match": "partial", "score": 2},
+          {"requirement": "Production ML deployment", "match": "no", "score": 0},
+          {"requirement": "Cloud (AWS/GCP/Azure)", "match": "no", "score": 0}
+        ]
+      }
+    },
+    {
+      "id": "test_003",
+      "jd_text": "Senior ML Engineer\n\nRequired:\n- Master's in CS/AI\n- 5+ years ML experience\n- Python, TensorFlow, PyTorch\n- Production ML deployment",
+      "resume_text": "ALEX JOHNSON - ML Engineer\n\nEDUCATION\nMS Computer Science - Georgia Tech 2019\nBS Physics - MIT 2017\n\nEXPERIENCE\nML Engineer | Robotics Corp | 2021-Present\n- Computer vision for autonomous vehicles\n- PyTorch, TensorFlow implementations\n- Research and prototyping\n\nML Research Assistant | University Lab | 2019-2021\n- Published 2 papers in computer vision\n- Python development\n- Experimental models",
+      "ground_truth": {
+        "label": "MAYBE",
+        "fit_score": 68,
+        "requirements": [
+          {"requirement": "Master's in CS/AI", "match": "yes", "score": 5},
+          {"requirement": "5+ years ML experience", "match": "partial", "score": 3},
+          {"requirement": "Python, TensorFlow, PyTorch", "match": "yes", "score": 5},
+          {"requirement": "Production ML deployment", "match": "partial", "score": 2}
+        ]
+      }
+    }
+  ]
+}
