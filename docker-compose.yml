@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  resume-evaluator:
+    build: .
+    container_name: resume-evaluator-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./results:/app/results
+      - ./metrics:/app/metrics
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - MODEL_NAME=Qwen/Qwen2.5-3B-Instruct
+      - DEVICE=cuda
+      - LOG_LEVEL=INFO
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import requests; requests.get('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
