@@ -487,9 +487,9 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/ai-resume-evaluator/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/ai-resume-evaluator/discussions)
-- **Email**: your.email@example.com
+- **Issues**: [GitHub Issues](https://github.com/Matrasulov/langchain-resume-rag/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Matrasulov/langchain-resume-rag/discussions)
+- **Email**: akbarjon3524@gmail.com
 
 ---
 
@@ -505,6 +505,6 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file.
 
 ---
 
-**Made with ❤️ by [Your Name]**
+**Made with ❤️ by Akbarjon Matrasulov**
 
 **⭐ Star this repo if you find it useful!**
